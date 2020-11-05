@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/tv_Ciudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="16dp"
+        android:text="Peru"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tv_Temp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_Icono"
+        android:layout_width="0dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_Viento"
+        app:layout_constraintEnd_toStartOf="@+id/tv_Temp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_Ciudad" />
+
+    <TextView
+        android:id="@+id/tv_Temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="89dp"
+        android:layout_marginTop="14dp"
+        android:text="15ºC"
+        android:textSize="15pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_Icono"
+        app:layout_constraintTop_toTopOf="@+id/iv_Icono" />
+
+    <TextView
+        android:id="@+id/tv_Viento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:text="Viento"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/iv_Icono"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_nube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Nube"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_Viento"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Viento" />
+
+    <TextView
+        android:id="@+id/tv_Presion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Presion"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_nube"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nube" />
+
+    <TextView
+        android:id="@+id/tv_Humedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Humedad"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_Presion"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Presion" />
+
+
+    <TextView
+        android:id="@+id/tv_SunSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Amanecer"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_Humedad"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Humedad" />
+
+    <TextView
+        android:id="@+id/tv_SunRise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Aterdecer"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_SunSet"
+        app:layout_constraintTop_toBottomOf="@+id/tv_SunSet" />
+
+    <TextView
+        android:id="@+id/tv_Update"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#ffff"
+        android:gravity="center"
+        android:text="Ultima Actualizacion"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
